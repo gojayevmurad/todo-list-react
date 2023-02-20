@@ -1,0 +1,76 @@
+.todo--app {
+  background-color: aliceblue;
+  width: 500px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 0 0 10px 2px #00000064;
+
+  &__form {
+    width: 100%;
+    input {
+      width: 100%;
+      border: none;
+      outline: none;
+      height: 30px;
+    }
+  }
+
+  &__list {
+    width: 100%;
+    &--todo {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: 10px 0;
+      background-color: #fff;
+      padding: 5px;
+      border-radius: 5px;
+      border: 1px solid black;
+
+      &__checkbox {
+        accent-color: rgb(243, 84, 5);
+      }
+
+      #gray {
+        color: rgba(128, 128, 128, 0.401);
+      }
+    }
+
+    .actions {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      button {
+        font-size: 13px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        transition: 0.3s;
+        padding: 5px;
+
+        &:hover {
+          color: #fff;
+          background-color: #00000045;
+        }
+      }
+      p {
+        font-size: 12px;
+        span {
+          font-size: 16px;
+          color: red;
+        }
+      }
+      ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        
+      }
+    }
+  }
+}
